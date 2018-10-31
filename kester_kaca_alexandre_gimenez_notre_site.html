@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guino, the answer to your desirs</title>
+<style>
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+h2 {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+header p {
+  border: 1px solid green;
+  background-color: black;
+  width: 90%;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+body p {
+  border: 0px solid black;
+  background-color: white;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  font-family: Helvetica;
+  color: black;
+}
+
+footer p {
+  border: 0px;  
+  background-color: #C0C0C0;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+footer a:hover {
+  color: purple;
+}
+
+<!--Lets see if use or not-->
+.icone a:hoover span{
+	display: block; 
+	color: black; 
+	background-color: grey; 
+	position: absolute;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body style="background-color: grey;">
+<header><!--cf color & background-color css format-->
+<div class="row">
+  <div class="col-lg-12 col-md-12" style="background-color: black; color: white;">
+	<p style="height: 50px; margin-bottom: 0px; text-align: center; background-color: black;"><a href="https://www.guino.com/fr.html"><span style="font-size: 40px; color: white; color-background: black;">Guino</span><span style="color: white; float: right; margin-left: -50%;"><em>Find your guitar or your piano for the best price.</em></span></a>
+	</p>
+<!--petit p 1 header = form-->
+	<form method="post" action="traitement.php" class="col-lg-4 col-md-4" style="height: 50px; line-height: 30px; text-align: left;">
+		<img src="loupe.png" alt="search" width="30px" height="30px" style="margin-right: 15px; margin-top: 10px; margin-left: 15px;"/>
+		<label for="search" style="margin-bottom: 10px; line-height: 30px;"></label>
+		<input type="search" name="search" id="search" placeholder="Search" />
+	</form>
+	<nav class="col-lg-4 col-md-4" style="height: 50px; margin-top: 0px; color: white; background-color: black; text-align: center;">
+		<br />
+		<a href="#products" style="; margin-right: 10px;">Products</a> 
+		<a href="#classes" style="color: white; margin-right: 10px;">Classes</a>
+		<a href="#brands" style="color: white; margin-right: 10px;">Brands</a>
+		<a href="#events" style="color: white; margin-right: 10px;">Events</a>
+		<a href="#sponsors" style="color: white; margin-right: 10px;">Sponsors</a>
+		<a href="#about" style="color: white;">About us</a>
+	</nav>
+	<p class="col-lg-4 col-md-4" style="height: 50px; margin-top: 0px; color: white; background-color: black; text-align: right;">
+		<a href="https://www.guino.com/customer-space.html"><img src="customer.png" alt="search" width="30px" height="30px" style="margin-right: 15px; margin-left: 130px; margin-top: 10px;"></a>
+		<a href="https://www.guino.com/basket.html"><img src="panier.png" alt="search" width="30px" height="30px" style="margin-right: 15px;"></a>
+		<a href="https://www.guino.com/languages.html"><img src="english-flag.png" alt="search" width="30px" height="30px" style="margin-right: 15px;"></a>
+	</p>
+  </div>
+</div>
+</header>
+
+<h1>Welcome Home !</h1>
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+	<img src="pluton.jpg" alt="mail" width="100%" height="180px" style="padding-left: 30px; background-color: white;" />
+	<br /><br /><br />
+  </div>
+</div>
+<h2><a id="products">Products</a></h2>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+	<img src="guitare-set.jpg" alt="mail" width="100%" height="400px" />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<img src="piano-shop.jpg" alt="mail" width="100%" height="400px" />
+	<br /><br /><br />
+  </div>
+</div>
+<h2><a id="classes">Classes</a></h2>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+	<img src="piano-lesson.jpg" alt="mail" width="100%" height="400px" />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<p style="height: 400px; width: 751px; margin-top: 0px; text-align: justify; padding-right: 20px; padding-left: 20px;">
+		Would you like to play beautiful, entertaining piano music and impress your friends and family? Are you ready to be treated like a celebrity by everyone who hears you play? Or maybe you want to take things further and become a professional player, thrilling audiences all over. If so, you need to enrol in this course.<br /><br /> 
+		This piano course is for the complete beginner who wants to thoroughly understand the notes of the piano keyboard and music staff, as well as basic scales and chords. It takes you from the very beginning. If you are new to the instrument, this is the perfect course for you.<br /><br /> 
+		Our Masterclass is a great way to build your foundation and get started on the piano.We are two professional musicians; we have been teaching music for 30 years. We will train you to avoid the main beginner mistakes. The first lesson is 100%!<br /><br /> 
+		We are convinced that the piano is a real source of pleasure and satisfaction, this is why we willwork on the song that YOU want<br /><br /> 
+		But when you're ready to take the next step and fast-track your results with step-by-step courses, live lessons, and a motivational community then we recommend joining us ;-).<br /><br /> 
+		Sincerly,<br /><br /> 
+		Kester & Alexandre
+	</p>
+	<br /><br /><br />
+  </div>
+</div>
+<h2><a id="brands">Brands</a></h2>
+<div class="row">
+  <div class="col-lg-2 col-md-4">
+	<img src="schecter.png" alt="mail" width="100%" height="180px" />
+  </div>
+  <div class="col-lg-2 col-md-4">
+	<img src="fender.png" alt="mail" width="100%" height="180px" />
+  </div>
+  <div class="col-lg-2 col-md-4">
+	<img src="ibanez.png" alt="mail" width="100%" height="180px" />
+  </div>
+  <div class="col-lg-2 col-md-4">
+	<img src="yamaha.png" alt="mail" width="100%" height="180px" />
+  </div>
+  <div class="col-lg-2 col-md-4">
+	<img src="kawai.png" alt="mail" width="100%" height="180px" />
+  </div>
+  <div class="col-lg-2 col-md-4">
+	<img src="schimmel.jpg" alt="mail" width="100%" height="180px" />
+	<br /><br /><br />
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 col-md-12">	
+  <div style="float: center; text-align: center; margin-left: 40px; margin-right: 40px;">
+  <table class="col-lg-12 col-md-12" style="margin-bottom: 30px;">
+	<caption><h2><a id="events">Events</a></h2></caption>
+		<tr>
+			<th style="border: solid;">December</th>
+			<td style="border: solid;">Full Moon concert</td>
+			<td style="border: solid;">Christmas songs</td>
+			<td style="border: solid;">Mary Christmas festival</td>
+			<td style="border: solid;">Piano exhibition</td>
+			<td style="border: solid;"></td>
+		</tr>
+			<th style="border: solid;">January</th>
+			<td style="border: solid;">The song of the new year</td>
+			<td style="border: solid;">New King of Music 2019</td>
+			<td style="border: solid;">Old School Music Discovery</td>
+			<td style="border: solid;"></td>
+			<td style="border: solid;"></td>
+		</tr>
+		<tr>
+			<th style="border: solid;">February</th>
+			<td style="border: solid;">It's snowing tunes</td>
+			<td style="border: solid;">Jarrod Radnich night</td>
+			<td style="border: solid;">Music in the air festival</td>
+			<td style="border: solid;">Guitar contest of Nice</td>
+			<td style="border: solid;">Musician meeting (Paris)</td>
+		</tr>
+	</table>
+	</div>
+	</div>
+</div>
+<h2><a id="sponsors">Sponsors</a></h2>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+	<img src="music-shop.jpg" alt="mail" width="100%" height="400px" />
+	<figcaption><em>Hello music listners (music store)</em></figcaption>
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<img src="royal-blood.jpg" alt="mail" width="100%" height="400px" />
+	<figcaption><em>Rock your mood (Rock n roll group)</em></figcaption>
+	<br /><br /><br />
+  </div>
+</div>
+<h2><a id="about">About us</a></h2>
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+		<ul style="background-color: white; height: 400px; margin-top: 0px; margin-bottom: -30px;">Kester<br /><br /><br />	
+			<li>8 years of piano practicing</li>
+			<br />
+			<li>Regional contest prices</li>
+			<br />
+			<li>Specialist in movie's soundtrack reproduction</li>
+			<br />
+			<li>Musical ear of excellence</li>
+			<br />
+			<li>Perfect ability to do different things with both hands at the same time</li>
+			<br />
+			<li>Learn tunes as well as creating them</li>
+			<br />
+			<li>Adaptability to any music gender, group or instrument</li>
+			<br />
+			<li>Citation: <em>Don't follow the wave, just play what you feel</em></li>
+		</ul>
+	</div>
+	<div class="col-lg-4 col-md-12">
+		<img src="piano-lesson.jpg" alt="mail" width="100%" height="400px" style="margin-bottom: -30px;" />
+	</div>
+	<div class="col-lg-4 col-md-12">
+		<ul style="background-color: white; height: 400px; margin-top: 0px; margin-bottom: -30px;">Alexandre<br /><br /><br />
+			<li>Guitarist since 2007</li>
+			<br />
+			<li>Music composer: 1 record</li>
+			<br />
+			<li>Sound Engineer </li>
+			<br />
+			<li>Lead Guitarist in "Black Shuck"</li>
+			<br />
+			<li>Guitar teacher since 2013</li>
+			<br />
+			<li>IT: Garage Band, Cubas Pro, Guitar Pro Tool</li>
+			<br />
+			<li>Knowledge in Business Music Industry</li>
+			<br />
+			<li>Citation: <em>People who think that music creation is limited are not real musicians</em></li>
+		</ul>
+	</div>
+</div>
+<footer>
+<div class="row">
+  <div class="col-lg-12 col-md-12"  style="background-color: #C0C0C0;">
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px; text-align: center; float: center;">Products & services</span>
+		<br />
+		<br />
+		<a href="https://www.guino.com/upright-piano.html" style=" margin-left: 10px;">Upright piano</a><br />
+		<a href="https://www.guino.com/grand-piano.html" style=" margin-left: 10px;">Grand piano</a><br />
+		<a href="https://www.guino.com/acoustic-guitar.html" style=" margin-left: 10px;">Acoustic guitar</a><br />
+		<a href="https://www.guino.com/electric-guitar.html" style=" margin-left: 10px;">Electric guitar</a><br />
+		<a href="https://www.guino.com/piano-lesson.html" style=" margin-left: 10px;">Piano lesson</a><br />
+		<a href="https://www.guino.com/guitar-lesson.html" style=" margin-left: 10px;">Guitar lesson</a><br />
+		<a href="https://www.guino.com/second-hand-items.html" style=" margin-left: 10px;">Second hand items</a><br />
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px;">Contacts</span>
+		<br />
+		<br />
+		<a href="tel: +33689976877" class="mobilesonly"><img src="tel.png" alt="telephone" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> +336 89 97 68 77</span></a><br /><br />
+		<a href="mailto:kester.kaca.bba@edhec.com"><img src="mail.png" alt="mail" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> kester.kaca.bba@edhec.com</span></a><br /><br />
+		<a href="https://www.google.fr/maps/place/4+Avenue+Saint-Roch,+06560+Valbonne/@43.6407757,7.0052174,17z/data=!3m1!4b1!4m5!3m4!1s0x12cc2be287835e23:0xd5d046ee2406ef0e!8m2!3d43.6407757!4d7.0074061" target="_blank"><img src="gps.png" alt="adresse" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> 4 Avenue Saint Roch, 06 560 Valbonne</span></a><br />
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px;">	Social</span>
+		<br />
+		<br />
+		<a href="https://www.facebook.com/kester.kaca"><img src="facebook.png" alt="facebook" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Facebook</span></a><br /><br />
+		<a href="https://www.youtube.com/channel/UCsI3s9pbys0W3fjFYsK9E0g"><img src="youtube.png" alt="youtube" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> YouTube</span></a><br /><br />
+		<a href="https://www.instagram.com/nannox222/?hl=fr"><img src="instagram.png" alt="instagram" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Instagram</span></a><br /><br />
+		<img src="twitter.png" alt="twitter" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Twitter</span><br />
+<!--Compte Twitter à relier-->
+	</p>	
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/about-us.html"><span style="font-size: 20px;">About us</span></a>
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/legal-mentions.html"><span style="font-size: 20px;">Legal mentions</span></a>
+	</p> 
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/private-policy.html"><span style="font-size: 20px;">Private policy</span></a>
+	</p>
+	<p class="col-lg-12 col-md-12" style="height: 25px; margin-top: 0px; margin-bottom: 0px; color: #808080;">® Kester KAÇA & Alexandre GIMENEZ <span style="text-align: right; float: right;"><em>Website dedicated to music lovers<em></span>
+	</p>
+  </div>
+</div>
+</footer>
+</body>
+</html>
