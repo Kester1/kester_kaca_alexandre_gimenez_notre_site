@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guino, the answer to your desirs</title>
+<link type="text/html" rel="stylesheet" href="kester_kaca_alexan_gimenez_notre_site.html">
+<style>
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+h2 {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+header p {
+  border: 1px solid green;
+  background-color: black;
+  width: 90%;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+body p {
+  border: 0px solid black;
+  background-color: white;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  font-family: Helvetica;
+  color: black;
+}
+
+footer p {
+  border: 0px;  
+  background-color: #C0C0C0;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+footer a:hover {
+  color: purple;
+}
+
+<!--Lets see if use or not-->
+.icone a:hoover span{
+	display: block; 
+	color: black; 
+	background-color: grey; 
+	position: absolute;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body style="background-color: grey;">
+<header><!--cf color & background-color css format-->
+<div class="row">
+  <div class="col-lg-12 col-md-12" style="background-color: black; color: white;">
+	<p style="height: 50px; margin-bottom: 0px; text-align: center; background-color: black;"><a href="kester_kaca_alexandre_gimenez_notre_site.html"><span style="font-size: 40px; color: white; color-background: black;">Guino</span><span style="color: white; float: right; margin-left: -50%;"><em>Find your guitar or your piano for the best price.</em></span></a>
+	</p>
+<!--petit p 1 header = form-->
+	<form method="post" action="traitement.php" class="col-lg-4 col-md-4" style="height: 50px; line-height: 30px; text-align: left;">
+		<img src="loupe.png" alt="search" width="30px" height="30px" style="margin-right: 15px; margin-top: 10px; margin-left: 15px;"/>
+		<label for="search" style="margin-bottom: 10px; line-height: 30px;"></label>
+		<input type="search" name="search" id="search" placeholder="Search" />
+	</form>
+<!--
+	<nav class="col-lg-4 col-md-4" style="height: 50px; margin-top: 0px; color: white; background-color: black; text-align: center;">
+		<br />
+		<a href="#products" style="color: white; margin-right: 10px;">Products</a> 
+		<a href="#classes" style="color: white; margin-right: 10px;">Classes</a>
+		<a href="#brands" style="color: white; margin-right: 10px;">Brands</a>
+		<a href="#events" style="color: white; margin-right: 10px;">Events</a>
+		<a href="#sponsors" style="color: white; margin-right: 10px;">Sponsors</a>
+		<a href="#about" style="color: white;">About us</a>
+	</nav>
+-->
+	<p class="col-lg-4 col-md-4" style="height: 50px; margin-top: 0px; color: white; background-color: black; text-align: right; margin-left: 500px; float: right;">
+		<a href="https://www.guino.com/customer-space.html"><img src="customer.png" alt="search" width="30px" height="30px" style="margin-right: 15px; margin-left: 130px; margin-top: 10px;"></a>
+		<a href="https://www.guino.com/basket.html"><img src="panier.png" alt="search" width="30px" height="30px" style="margin-right: 15px;"></a>
+		<a href="https://www.guino.com/languages.html"><img src="english-flag.png" alt="search" width="30px" height="30px" style="margin-right: 15px;"></a>
+	</p>
+  </div>
+</div>
+</header>
+
+<h1 style="margin-bottom: -30px;">Upright piano</h1>
+<h2 style="padding-top: 30px;">Grand piano</h2>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+	<img src="piano1.jpg" alt="mail" width="100%" height="400px" style="background-color: white; margin-top: 0px;"/>
+	<br /><br /><br />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<p style="height: 400px; width: 751px; margin-top: 0px; text-align: justify; padding-right: 20px; padding-left: 20px;">
+		Design and elegant piano, the <em>grand piano</em> needs a large room. The best way is to put it in the middle of a living room. Ideal for classic and folk music, its sounds makes the vibes get through the open space (called the tail).
+	<br /><br />
+		More adapted to melodies, the sweet sound produced is ideal to relax and let your creativity take place. This piano is more adapted to two players as well, due to the thiness of the sound.
+	<br /><br />
+		You could be either a good player or a novice, this format is interesting. The <em>grand piano</em> musical style is as well music one teaches to beginners as professional ones. This is a nice instrument to make elaborated tunes and to play soundtracks.
+		<br /><br />
+		Usually associated to luxury, this piano is generally the first one that comes to the mind of the major part of the population.
+	</p>
+	<br /><br /><br />
+  </div>
+</div>
+<h2>Classic piano</h2>
+<div class="row"> 
+  <div class="col-lg-6 col-md-12" style="background-color: white;">
+	<p style="height: 400px; width: 751px; margin-top: 0px; text-align: justify; padding-right: 20px; padding-left: 20px;">
+		More casual, the <em>classic piano</em> is	actually as good as the previous one. It is supposed to be placed against a wall due to its flat side shape. It reasons loudly and strongly, especially in the lower sounds.
+	<br /><br />
+		More adapted to accords, the natural sound produced is ideal to break your "life habits" and make you be part of what you are playing. This piano could be adaptated to new or old players as well.
+	<br /><br />
+		The <em>classic piano</em> musical style is "ancient", "old school". That makes your tunes full of life. This is a nice instrument to add some style to your main theme (boogie, jazz...).
+		<br /><br />
+		Usually cheaper than the big one, this piano is associated to nature and antiquity. It is of course still famous and fashionable.
+	</p>
+	<br /><br /><br />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<img src="piano2.jpg" alt="mail" width="100%" height="400px" />
+	<br /><br /><br />
+  </div>
+</div>
+<h2 style="text-align: left;">Keyboard</h2>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+	<img src="piano3.jpg" alt="mail" width="100%" height="400px" />
+	<br /><br /><br />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<p style="height: 400px; width: 751px; margin-top: 0px; text-align: justify; padding-right: 20px; padding-left: 20px;">
+		Practicable and mobile piano, the <em>keyboard</em> could be placed anywhere. It is adaptable to any kind of sound, because it imitates any instrument. Ideal for mix and compositions, its sounds cn vary from instruments to others, from styles to style, and across the power as well.
+	<br /><br />
+		Basically, this piano can be adapted to anything thanks to its range of sounds. You can even play with a soundtrack un background.
+	<br /><br />
+		Beter for beginners, this make them have fun while learning how to play. It teaches them how to improvise and follow a rythm too. The <em>keyboard</em> is mainly dedicated to people who like creation. Very easy to bring with you, especially for young travelers.
+		<br /><br />
+		When we hear <em>keyboard</em>, we usually think about something new, young, electric, but actually this is quite wrong (except that it is electric obviously). Ths first electric piano that saw life was in 1931.
+	</p>
+	<br /><br /><br />
+  </div>
+</div>
+<h2>Our "specials"</h2>
+<div class="row"> 
+  <div class="col-lg-6 col-md-12" style="background-color: white;>	
+	<p style="height: 400px; width: 751px; margin-top: 0px; text-align: justify; padding-right: 20px; padding-left: 20px; margin-bottom: -55px;">
+		In this section, we have got several pianos. Some of them are weird, other are strange, while other are bizare. What is the point ? Well a piano is not only an instrument, it is also a professional tool. A toll that reflects everything from its user. You can learn a lot from someone by listening to him play.
+		<br /><br />
+		Because of this auditive identity, musicians sometimes require a customized piano. This is the reason why we possess all this range of extravagant pianos. We want to identify our clients to their products, and we can make them as you want them.
+		<br /><br />
+		So what you need to do is to give us a theme, draws, what you like playing... and we can do it for you. We can also customize your piano if you already possess one.
+		<br /><br />
+		So what are you waiting for ?
+	</p>
+	<br /><br /><br />
+  </div>
+  <div class="col-lg-6 col-md-12">
+	<img src="piano4.jpg" alt="mail" width="100%" height="441px" style="margin-bottom: -55px;"/>
+	<br /><br /><br />
+  </div>
+</div>
+
+<footer>
+<div class="row">
+  <div class="col-lg-12 col-md-12"  style="background-color: #C0C0C0;">
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px; text-align: center; float: center;">Products & services</span>
+		<br />
+		<br />
+		<a href="upright-piano.html" style=" margin-left: 10px;">Upright piano</a><br />
+		<a href="grand-piano.html" style=" margin-left: 10px;">Grand piano</a><br />
+		<a href="acoustic-guitar.html" style=" margin-left: 10px;">Acoustic guitar</a><br />
+		<a href="electric-guitar.html" style=" margin-left: 10px;">Electric guitar</a><br />
+		<a href="piano-lesson.html" style=" margin-left: 10px;">Piano lesson</a><br />
+		<a href="guitar-lesson.html" style=" margin-left: 10px;">Guitar lesson</a><br />
+		<a href="second-hand-items.html" style=" margin-left: 10px;">Second hand items</a><br />
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px;">Contacts</span>
+		<br />
+		<br />
+		<a href="tel: +33689976877" class="mobilesonly"><img src="tel.png" alt="telephone" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> +336 89 97 68 77</span></a><br /><br />
+		<a href="mailto:kester.kaca.bba@edhec.com"><img src="mail.png" alt="mail" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> kester.kaca.bba@edhec.com</span></a><br /><br />
+		<a href="https://www.google.fr/maps/place/4+Avenue+Saint-Roch,+06560+Valbonne/@43.6407757,7.0052174,17z/data=!3m1!4b1!4m5!3m4!1s0x12cc2be287835e23:0xd5d046ee2406ef0e!8m2!3d43.6407757!4d7.0074061" target="_blank"><img src="gps.png" alt="adresse" width="35px" height="35px" style="float: left;" /><span style="line-height: 35px;"> 4 Avenue Saint Roch, 06 560 Valbonne</span></a><br />
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 185px; margin-bottom: 0px;"><span style="font-size: 20px;">	Social</span>
+		<br />
+		<br />
+		<a href="https://www.facebook.com/kester.kaca"><img src="facebook.png" alt="facebook" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Facebook</span></a><br /><br />
+		<a href="https://www.youtube.com/channel/UCsI3s9pbys0W3fjFYsK9E0g"><img src="youtube.png" alt="youtube" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> YouTube</span></a><br /><br />
+		<a href="https://www.instagram.com/nannox222/?hl=fr"><img src="instagram.png" alt="instagram" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Instagram</span></a><br /><br />
+		<img src="twitter.png" alt="twitter" width="20px" height="20px" style="float: left; margin-right: 10px; margin-left: 10px;"/><span style="line-height: 20px;"> Twitter</span><br />
+<!--Compte Twitter à relier-->
+	</p>	
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/about-us.html"><span style="font-size: 20px;">About us</span></a>
+	</p>
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/legal-mentions.html"><span style="font-size: 20px;">Legal mentions</span></a>
+	</p> 
+	<p class="col-lg-4 col-md-4" style="height: 25px; margin-top: 20px;"><a href="https://www.guino.com/private-policy.html"><span style="font-size: 20px;">Private policy</span></a>
+	</p>
+	<p class="col-lg-12 col-md-12" style="height: 25px; margin-top: 0px; margin-bottom: 0px; color: #808080;">® Kester KAÇA & Alexandre GIMENEZ <span style="text-align: right; float: right;"><em>Website dedicated to music lovers<em></span>
+	</p>
+  </div>
+</div>
+</footer>
+</body>
+</html>
